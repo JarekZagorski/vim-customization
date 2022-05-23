@@ -90,7 +90,7 @@ set formatoptions=tcqrn1
 "set shiftwidth=4
 "set softtabstop=4
 
-let tabsize = 3
+let tabsize = 2
 execute "set tabstop=".tabsize
 execute "set shiftwidth=".tabsize
 execute "set softtabstop=".tabsize
@@ -124,7 +124,8 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 set number
 
 " Set status line display
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
+set statusline=%F%m%r%h%w\ [POS=%l,%v][%p%%]\ [BUFFER=%n]
+set laststatus=2
 
 " Encoding
 set encoding=utf-8
@@ -138,8 +139,15 @@ set ignorecase
 " Include only uppercase words with uppercase search term
 set smartcase
 
+
+
+" CUSTOM ADDED DATA STARTS HERE
 " Displaying menu when completing commands
 set wildmenu
+" Sets line numbers as hybrid
+set nu rnu
+" Changes color scheme
+colorscheme desert
 
 " Store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
 set viminfo='100,<9999,s100
