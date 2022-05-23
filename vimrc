@@ -86,10 +86,6 @@ set pastetoggle=<F2>
 " set textwidth=79
 set formatoptions=tcqrn1
 
-"set tabstop=4
-"set shiftwidth=4
-"set softtabstop=4
-
 let tabsize = 3
 execute "set tabstop=".tabsize
 execute "set shiftwidth=".tabsize
@@ -117,8 +113,9 @@ set showcmd
 set matchpairs+=<:>
 
 " Display different types of white spaces.
-set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+"set list
+"set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+"set listchars=trail:•,extends:#,nbsp:.
 
 " Show line numbers
 set number
@@ -137,6 +134,9 @@ set incsearch
 set ignorecase
 " Include only uppercase words with uppercase search term
 set smartcase
+
+" Shows command completion menu
+set wildmenu
 
 " Store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
 set viminfo='100,<9999,s100
