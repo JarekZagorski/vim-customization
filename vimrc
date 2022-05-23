@@ -86,15 +86,11 @@ set pastetoggle=<F2>
 " set textwidth=79
 set formatoptions=tcqrn1
 
-<<<<<<< HEAD
 "set tabstop=4
 "set shiftwidth=4
 "set softtabstop=4
 
 let tabsize = 2
-=======
-let tabsize = 3
->>>>>>> 10b15f4bb7cc2aa495148f8f2e1f5fbdbaabc2ad
 execute "set tabstop=".tabsize
 execute "set shiftwidth=".tabsize
 execute "set softtabstop=".tabsize
@@ -144,9 +140,6 @@ set ignorecase
 " Include only uppercase words with uppercase search term
 set smartcase
 
-<<<<<<< HEAD
-
-
 " CUSTOM ADDED DATA STARTS HERE
 " Displaying menu when completing commands
 set wildmenu
@@ -154,10 +147,6 @@ set wildmenu
 set nu rnu
 " Changes color scheme
 colorscheme desert
-=======
-" Shows command completion menu
-set wildmenu
->>>>>>> 10b15f4bb7cc2aa495148f8f2e1f5fbdbaabc2ad
 
 " Store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
 set viminfo='100,<9999,s100
