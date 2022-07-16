@@ -30,9 +30,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " turned off for testing of YCM
 Plugin 'https://github.com/ackyshake/VimCompletesMe.git'
 
-" YCM plugin
-" Plugin 'https://github.com/tabnine/YouCompleteMe'
-
 " Draculacolor scheme
 Plugin 'dracula/vim', { 'name': 'dracula' }
 
