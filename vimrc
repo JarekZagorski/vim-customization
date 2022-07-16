@@ -30,7 +30,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " turned off for testing of YCM
 Plugin 'https://github.com/ackyshake/VimCompletesMe.git'
 
-" Draculacolor scheme
+" Dracula color scheme
 Plugin 'dracula/vim', { 'name': 'dracula' }
 
 " All of your Plugins must be added before the following line
@@ -90,17 +90,14 @@ set pastetoggle=<F2>
 " set textwidth=79
 set formatoptions=tcqrn1
 
-"set tabstop=4
-"set shiftwidth=4
-"set softtabstop=4
-
+" Change tabs to 4 spaces
+set expandtab
 let tabsize = 4
 execute "set tabstop=".tabsize
 execute "set shiftwidth=".tabsize
 execute "set softtabstop=".tabsize
 
-"set expandtab
-"set noshiftround
+set noshiftround
 
 " Display 5 lines above/below the cursor when scrolling with a mouse.
 set scrolloff=5
@@ -141,14 +138,6 @@ set ignorecase
 " Include only uppercase words with uppercase search term
 set smartcase
 
-" CUSTOM ADDED DATA STARTS HERE
-" Displaying menu when completing commands
-set wildmenu
-" Sets line numbers as hybrid
-set nu rnu
-" Changes color scheme
-colorscheme dracula
-highlight Normal ctermbg=none
 
 " Store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
 set viminfo='100,<9999,s100
@@ -160,3 +149,15 @@ vnoremap <Space> zf
 " Automatically save and load folds
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"						  CUSTOM ADDED DATA STARTS HERE                              "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Displaying menu when completing commands
+set wildmenu
+" Sets line numbers as hybrid
+set nu rnu
+" Changes color scheme
+colorscheme dracula
+highlight Normal ctermbg=none
+
