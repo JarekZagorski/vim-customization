@@ -124,7 +124,8 @@ set number
 
 " Set status line display
 set statusline=%F%m%r%h%w\ [POS=%l,%v][%p%%]\ [BUFFER=%n]
-set laststatus=2
+" 0 for off, 1 for statusbar to be shown only with multiple vim windows, 2 for always on
+set laststatus=1
 
 " Encoding
 set encoding=utf-8
