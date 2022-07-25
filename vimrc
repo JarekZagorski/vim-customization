@@ -28,7 +28,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " turned off for testing of YCM
-Plugin 'https://github.com/ackyshake/VimCompletesMe.git'
+" Plugin 'https://github.com/ackyshake/VimCompletesMe.git'
+Plugin 'https://github.com/ycm-core/YouCompleteMe.git'
 
 " Dracula color scheme
 Plugin 'dracula/vim', { 'name': 'dracula' }
