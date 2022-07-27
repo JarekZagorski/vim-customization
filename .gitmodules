@@ -4,6 +4,3 @@
 [submodule "bundle/VimCompletesMe"]
   path = bundle/VimCompletesMe
   url = https://github.com/ackyshake/VimCompletesMe.git
-[submodule "bundle/command-t"]
-  path = bundle/command-t
-  url = https://github.com/wincent/command-t.git
