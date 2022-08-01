@@ -163,3 +163,7 @@ set nu rnu
 colorscheme dracula
 highlight Normal ctermbg=none
 
+" YouCompleteMe specific stuff
+" Disabling top preview windw
+let g:ycm_add_preview_to_completeopt="popup"
+let g:ycm_autoclose_preview_window_after_completion=1
