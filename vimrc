@@ -163,6 +163,12 @@ set nu rnu
 colorscheme dracula
 highlight Normal ctermbg=none
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" KEYBINDINGS
+"   Explorer
+nnoremap <F11> :Explore<CR>
+nnoremap <F10> :noh<CR>
+
 " YouCompleteMe specific stuff
 " Disabling top preview windw
 let g:ycm_add_preview_to_completeopt="popup"
