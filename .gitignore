@@ -1,3 +1,6 @@
 .netrwhist
 view/
-bundle
+bundle/
+!bundle/Vundle.vim
+!bundle/dracula
+

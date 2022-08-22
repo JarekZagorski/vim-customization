@@ -28,7 +28,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " turned off for testing of YCM
-Plugin 'https://github.com/ackyshake/VimCompletesMe.git'
+" Plugin 'https://github.com/ackyshake/VimCompletesMe.git'
+Plugin 'https://github.com/ycm-core/YouCompleteMe.git'
 
 " Dracula color scheme
 Plugin 'dracula/vim', { 'name': 'dracula' }
@@ -124,6 +125,7 @@ set number
 
 " Set status line display
 set statusline=%F%m%r%h%w\ [POS=%l,%v][%p%%]\ [BUFFER=%n]
+" 0 for off, 1 for statusbar to be shown only with multiple vim windows, 2 for always on
 set laststatus=1
 
 " Encoding
@@ -161,3 +163,13 @@ set nu rnu
 colorscheme dracula
 highlight Normal ctermbg=none
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" KEYBINDINGS
+"   Explorer
+nnoremap <F11> :Explore<CR>
+nnoremap <F10> :noh<CR>
+
+" YouCompleteMe specific stuff
+" Disabling top preview windw
+let g:ycm_add_preview_to_completeopt="popup"
+let g:ycm_autoclose_preview_window_after_completion=1
