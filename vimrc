@@ -124,7 +124,7 @@ set number
 
 " Set status line display
 set statusline=%F%m%r%h%w\ [POS=%l,%v][%p%%]\ [BUFFER=%n]
-set laststatus=2
+set laststatus=1
 
 " Encoding
 set encoding=utf-8
