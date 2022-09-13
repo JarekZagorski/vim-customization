@@ -31,6 +31,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'https://github.com/ackyshake/VimCompletesMe.git'
 Plugin 'https://github.com/ycm-core/YouCompleteMe.git'
 
+" Completion config file generator
+Plugin 'https://github.com/rdnetto/YCM-Generator.git'
+
 " Dracula color scheme
 Plugin 'dracula/vim', { 'name': 'dracula' }
 
