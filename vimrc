@@ -34,6 +34,9 @@ Plugin 'https://github.com/ycm-core/YouCompleteMe.git'
 " Completion config file generator
 Plugin 'https://github.com/rdnetto/YCM-Generator.git'
 
+" Quick comments
+Plugin 'https://github.com/preservim/nerdcommenter.git'
+
 " Dracula color scheme
 Plugin 'dracula/vim', { 'name': 'dracula' }
 
