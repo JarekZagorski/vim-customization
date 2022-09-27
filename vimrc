@@ -174,6 +174,7 @@ highlight Normal ctermbg=none
 "   Explorer
 nnoremap <F11> :Explore<CR>
 nnoremap <F10> :noh<CR>
+nnoremap <F5> :YcmRestartServer<CR>
 
 " YouCompleteMe specific stuff
 " Disabling top preview windw
