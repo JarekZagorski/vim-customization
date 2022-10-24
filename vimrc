@@ -37,8 +37,19 @@ Plugin 'https://github.com/rdnetto/YCM-Generator.git'
 " Quick comments
 Plugin 'https://github.com/preservim/nerdcommenter.git'
 
-" Dracula color scheme
+" Color schemes
 Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'https://github.com/joshdick/onedark.vim.git'
+Plugin 'https://github.com/challenger-deep-theme/vim.git'
+
+" better statusline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'https://github.com/edkolev/tmuxline.vim.git'
+
+" Better GO features
+Plugin 'https://github.com/fatih/vim-go.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -168,6 +179,35 @@ set nu rnu
 " Changes color scheme
 colorscheme dracula
 highlight Normal ctermbg=none
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                   GO extension                                     "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set autowrite
+let g:go_list_type = "quickfix"
+
+" Coloring
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+
+" Keybindings
+autocmd FileType go nmap <leader>r <Plug>(go-run)
+
+" run :GoBuild or :GoTestCompile based on the go file
+function! s:build_go_files()
+    let l:file = expand('%')
+    if l:file =~# '^\f\+_test\.go$'
+        call go#test#Test(0, 1)
+    elseif l:file =~# '^\f\+\.go$'
+        call go#cmd#Build(0)
+    endif
+endfunction
+
+autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " KEYBINDINGS
