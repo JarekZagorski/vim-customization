@@ -214,6 +214,7 @@ autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 "   Explorer
 nnoremap <F11> :Explore<CR>
 nnoremap <F10> :noh<CR>
+nnoremap <F5> :YcmRestartServer<CR>
 
 " YouCompleteMe specific stuff
 " Disabling top preview windw
