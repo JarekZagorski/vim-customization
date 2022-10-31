@@ -37,6 +37,9 @@ Plugin 'https://github.com/rdnetto/YCM-Generator.git'
 " Quick comments
 Plugin 'https://github.com/preservim/nerdcommenter.git'
 
+" File manager
+Plugin 'preservim/nerdtree'
+
 " Color schemes
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'NLKNguyen/papercolor-theme'
@@ -50,6 +53,9 @@ Plugin 'https://github.com/edkolev/tmuxline.vim.git'
 
 " Better GO features
 Plugin 'https://github.com/fatih/vim-go.git'
+
+" Scala additions
+Plugin 'derekwyatt/vim-scala'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -183,6 +189,7 @@ highlight Normal ctermbg=none
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   GO extension                                     "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set rtp+=<SHARE_DIR>/merlin/vim
 
 set autowrite
 let g:go_list_type = "quickfix"
@@ -211,7 +218,7 @@ autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " KEYBINDINGS
 "   Explorer
-nnoremap <F11> :Explore<CR>
+nnoremap <F11> :NERDTreeFocus<CR>
 nnoremap <F10> :noh<CR>
 nnoremap <F5> :YcmRestartServer<CR>
 
