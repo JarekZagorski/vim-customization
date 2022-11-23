@@ -45,6 +45,7 @@ Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'https://github.com/joshdick/onedark.vim.git'
 Plugin 'https://github.com/challenger-deep-theme/vim.git'
+Plugin 'arcticicestudio/nord-vim'
 
 " better statusline
 Plugin 'vim-airline/vim-airline'
@@ -183,7 +184,7 @@ set wildmenu
 " Sets line numbers as hybrid
 set nu rnu
 " Changes color scheme
-colorscheme dracula
+colorscheme nord
 highlight Normal ctermbg=none
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
